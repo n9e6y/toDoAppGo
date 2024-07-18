@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header>
+    <h1>To-Do List</h1>
+    <nav>
+        <a href="/">Home</a>
+    </nav>
+</header>
+<div id="app">
+    <main>
+        <section id="task-form">
+            <input type="text" id="task-title" placeholder="Task Title">
+            <input type="text" id="task-description" placeholder="Task Description">
+            <input type="date" id="task-due-date">
+            <select id="task-category">
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Urgent">Urgent</option>
+            </select>
+            <button id="add-task">Add Task</button>
+        </section>
+        <section id="task-list">
+            <!--Tasks Here -->
+        </section>
+    </main>
+</div>
+<footer>
+    <p>&copy; 2024 To-Do List App</p>
+</footer>
+<script src="/js/main.js"></script>
+</body>
+</html>

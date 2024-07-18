@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Details</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div id="app">
+    {{ template "header.html" . }}
+    <main>
+        <section id="task-details">
+            <h1>{{ .Title }}</h1>
+            <p>{{ .Description }}</p>
+            <p>Due Date: {{ .DueDate }}</p>
+            <p>Category: {{ .Category }}</p>
+            <p>Status: {{ if .IsCompleted }}Completed{{ else }}Incomplete{{ end }}</p>
+            <button id="mark-complete">Mark as Complete</button>
+            <button id="delete-task">Delete Task</button>
+        </section>
+    </main>
+    {{ template "footer.html" . }}
+</div>
+<script src="/js/main.js"></script>
+</body>
+</html>
